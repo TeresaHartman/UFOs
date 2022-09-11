@@ -57,15 +57,17 @@ function updateFilters() {
   function filterTable() {
   
     // 8. Set the filtered data to the tableData.
-    //does this go here? 
-    d3.selectAll("input").on("Change", updateFilters);
+    let filteredData = tableData;
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
+    for (const dataPt in filteredData) {
+        //statement
+    }
     
   
     // 10. Finally, rebuild the table using the filtered data
-    
+    buildTable(filteredData);
   }
   
   // 2. Attach an event to listen for changes to each filter
