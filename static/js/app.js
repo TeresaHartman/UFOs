@@ -13,7 +13,7 @@ function buildTable(data) {
     // and append a row and cells for each value in the row
     data.forEach((dataRow) => {
         // Append a row to the table body
-        let row = tbody.appeand("tr");
+        let row = tbody.append("tr");
 
         // Loop through each field in the dataRow and add
         // each value as a table cell (td)
